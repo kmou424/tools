@@ -2,9 +2,7 @@
 // Created by kmou424 on 2021/10/31.
 //
 
-#include <string>
-#include <cstring>
-#include <ctime>
+#include "tools.hpp"
 
 /**
  *  @brief date2Stamp(const std::string& date)
