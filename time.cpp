@@ -5,7 +5,6 @@
 #include "tools.hpp"
 
 /**
- *  @brief date2Stamp(const std::string& date)
  *  @order Convert formatted date to UNIX timestamp
  *  @param  _date  Formatted date (%Y%m%d%H%M%S)
  *  @return   The UNIX timestamp of date
@@ -35,7 +34,6 @@ time_t date2Stamp(const std::string& _date)
 }
 
 /**
- *  @brief stamp2Date(time_t t)
  *  @order Convert UNIX timestamp to formatted date
  *  @param  _t  A UNIX timestamp
  *  @return   The formatted date string (%Y%m%d%H%M%S)

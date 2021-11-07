@@ -5,7 +5,6 @@
 #include <tools.hpp>
 
 /**
- *  @brief split(std::vector<std::string>& result, std::string str, const std::string& pattern)
  *  @order Split string into vector array with pattern
  *  @param  _result  The vector array to save split string
  *  @param  _string  The original string will be used for splitting
