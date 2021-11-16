@@ -21,7 +21,7 @@ void split(std::vector<std::string>& _result, std::string _string, const std::st
     for (unsigned int i = 0; i < size; i++) {
         pos = _string.find(_pattern, i);
         if (pos < size) {
-            std::string s = _string.substr(i, pos -i );
+            std::string s = _string.substr(i, pos - i );
             _result.push_back(s);
             i = pos + _pattern.size() - 1;
         }
