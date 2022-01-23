@@ -23,4 +23,19 @@ std::string stamp2Date(time_t _t);
 void split(std::vector<std::string>& result, std::string str, const std::string& pattern);
 LargeNumber string2LargeNumber(const std::string& _num);
 
+// DictNodePoint #Start
+typedef struct {
+    int cnt;
+    char character;
+} charNode;
+
+struct DictNodePoint {
+    charNode chars[26];
+    DictNodePoint * nextDictNode = NULL;
+};
+
+int getWordShowTimesBeginWith(DictNodePoint * dictNode, std::string word);
+void insertWord(DictNodePoint * dictNode, std::string word);
+// DictNodePoint #End
+
 #endif //TOOLS_H
