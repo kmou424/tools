@@ -5,9 +5,11 @@
 #ifndef TOOLS_H
 #define TOOLS_H
 
+#include <algorithm>
 #include <string>
 #include <cstring>
 #include <ctime>
+#include <map>
 #include <vector>
 
 typedef std::vector<int> LargeNumber;
@@ -38,4 +40,15 @@ int getWordShowTimesBeginWith(DictNodePoint * dictNode, std::string word);
 void insertWord(DictNodePoint * dictNode, std::string word);
 // DictNodePoint #End
 
+// set.cpp
+// MergeSearchSet
+class MergeSearchSet {
+private:
+    std::vector<int> _set, _cnt;
+public:
+    MergeSearchSet(int n);
+    std::vector<int> count();
+    int find(int x);
+    void merge(int parent, int child);
+};
 #endif //TOOLS_H
